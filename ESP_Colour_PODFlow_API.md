@@ -1,4 +1,3 @@
-
 # ESP Colour PODFlow API Documentation
 
 ## About
@@ -135,6 +134,31 @@ A response will be returned immediately after the order request is stored, regar
 | **id**              | The unique order identifier.               |
 | **orderReferenceId**| Customer-provided order reference.         |
 | **createdAt**       | Date and time of order submission request. |
+
+---
+
+## Cancel Order
+
+### Endpoint
+
+To cancel an order, use the following endpoint:
+
+| HTTP Method | URL                          |
+|-------------|------------------------------|
+| `GET`       | `/order/cancel/{poRef}`      |
+
+### Request
+
+| Parameter | Description                                   |
+|-----------|-----------------------------------------------|
+| `poRef`   | Purchase order reference for the order to cancel. |
+
+### Response
+
+| Status Code | Description           |
+|-------------|-----------------------|
+| **200 OK**  | Success               |
+| **400 Bad Request** | Error message. |
 
 ---
 
