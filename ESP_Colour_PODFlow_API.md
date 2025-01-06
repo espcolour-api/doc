@@ -199,6 +199,67 @@ To cancel an order, use the following endpoint:
 
 ---
 
+## Update Order
+
+### Endpoint
+
+To update the shipping information for an order, use the following endpoint:
+
+| HTTP Method | URL                          |
+|-------------|------------------------------|
+| `POST`      | `/order/update`              |
+
+### Request
+
+| Header           | Value                     |
+|------------------|---------------------------|
+| Content-Type     | application/json          |
+
+| Parameter | Description                                   |
+|-----------|-----------------------------------------------|
+| JSON Body | JSON object with order details to update.    |
+
+#### Example Payload
+
+```json
+{
+  "shipments": [
+    {
+      "carrier": {
+        "alias": "ukhermesPackesdsdtsITD"
+      },
+      "cost": {
+        "currency": "GBP",
+        "value": 4.99
+      },
+      "shipmentIndex": 0,
+      "shipTo": {
+        "address1": "sd",
+        "address2": "here test",
+        "address3": "dfd",
+        "companyName": "",
+        "country": "United Kingdom",
+        "isoCountry": "ss",
+        "name": "sd",
+        "phone": "",
+        "postcode": "ssd",
+        "state": "",
+        "town": "where test sdancelled"
+      }
+    }
+  ]
+}
+```
+
+### Response
+
+| Status Code | Description           |
+|-------------|-----------------------|
+| **200 OK**  | Success               |
+| **400 Bad Request** | Error message. |
+
+---
+
 
 ## Full Documentation
 
