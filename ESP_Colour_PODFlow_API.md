@@ -199,7 +199,7 @@ To cancel an order, use the following endpoint:
 
 ---
 
-## Update Order
+## Update Shipping
 
 ### Endpoint
 
