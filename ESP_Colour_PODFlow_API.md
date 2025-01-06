@@ -201,13 +201,14 @@ To cancel an order, use the following endpoint:
 
 ## Update Shipping
 
+
 ### Endpoint
 
 To update the shipping information for an order, use the following endpoint:
 
 | HTTP Method | URL                          |
 |-------------|------------------------------|
-| `POST`      | `/order/update`              |
+| `POST`      | `/order/update/{poRef}`      |
 
 ### Request
 
@@ -217,6 +218,7 @@ To update the shipping information for an order, use the following endpoint:
 
 | Parameter | Description                                   |
 |-----------|-----------------------------------------------|
+| `poRef`   | Purchase order reference for the order to update. |
 | JSON Body | JSON object with order details to update.    |
 
 #### Example Payload
@@ -250,6 +252,7 @@ To update the shipping information for an order, use the following endpoint:
   ]
 }
 ```
+
 
 ### Response
 
