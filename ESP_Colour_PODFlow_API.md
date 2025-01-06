@@ -137,30 +137,6 @@ A response will be returned immediately after the order request is stored, regar
 
 ---
 
-## Cancel Order
-
-### Endpoint
-
-To cancel an order, use the following endpoint:
-
-| HTTP Method | URL                          |
-|-------------|------------------------------|
-| `GET`       | `/order/cancel/{poRef}`      |
-
-### Request
-
-| Parameter | Description                                   |
-|-----------|-----------------------------------------------|
-| `poRef`   | Purchase order reference for the order to cancel. |
-
-### Response
-
-| Status Code | Description           |
-|-------------|-----------------------|
-| **200 OK**  | Success               |
-| **400 Bad Request** | Error message. |
-
----
 
 ## Order Structure
 
@@ -197,6 +173,32 @@ Below is a basic JSON order structure for submitting an order:
 | **shipments** | Array of shipments (destinations). |
 
 ---
+
+## Cancel Order
+
+### Endpoint
+
+To cancel an order, use the following endpoint:
+
+| HTTP Method | URL                          |
+|-------------|------------------------------|
+| `GET`       | `/order/cancel/{poRef}`      |
+
+### Request
+
+| Parameter | Description                                   |
+|-----------|-----------------------------------------------|
+| `poRef`   | Purchase order reference for the order to cancel. |
+
+### Response
+
+| Status Code | Description           |
+|-------------|-----------------------|
+| **200 OK**  | Success               |
+| **400 Bad Request** | Error message. |
+
+---
+
 
 ## Full Documentation
 
