@@ -162,6 +162,8 @@ Below is a basic JSON order structure for submitting an order:
 }
 ```
 ## Typical Canvas Structure
+
+```json
 {
     "destination": {
         "name": "hp.espcolour"
@@ -254,7 +256,7 @@ Below is a basic JSON order structure for submitting an order:
         ]
     }
 }
-
+```
 
 ### Key Objects
 
