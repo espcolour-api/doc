@@ -161,6 +161,100 @@ Below is a basic JSON order structure for submitting an order:
   }
 }
 ```
+## Typical Canvas Structure
+{
+    "destination": {
+        "name": "hp.espcolour"
+    },
+    "orderData": {
+        "additionalInformation": "",
+        "amount": 99.99,
+        "customerName": "",
+        "email": "",
+        "extraData": [
+        ],
+        "items": [
+            
+            {
+                "binding": "none",
+                "components": [
+                    {
+                        "attributes": {
+                            "Bar": "38 mm",
+                            "ProductFinishedPageSize": "400 x 400 mm"
+                        },
+                        "code": "ESP",
+                        "fetch": true,
+                        "localFile": false,
+                        "path": "https://imageofyourcanvas.jpg",
+                        "preflight": false
+                    }
+                ],
+                "description": "Watercolour ....",
+                "extraData": {
+                    "Size": "16\" x 16\""
+                },
+                "folding": "none",
+                "quantity": 1,
+                "shipmentIndex": 0,
+                "shrinkWrap": false,
+                "sku": "Canvas",
+                "sourceItemId": "423790276",
+                "tags": [
+                ],
+                "unitPrice": 41.99,
+                "unitWeight": 2.65
+            }
+        ],
+        "misCode": "",
+        "printType": "digital",
+        "purchaseOrderNumber": "",
+        "shipments": [
+            {
+                "attachments": [
+                ],
+                "carrier": {
+                    "alias": "UK24",
+                    "code": "",
+                    "service": ""
+                },
+                "cost": {
+                    "currency": "GBP",
+                    "value": 99.99
+                },
+                "returnAddress": {
+                    "address1": "",
+                    "address2": "",
+                    "companyName": "",
+                    "isoCountry": "GB",
+                    "name": "",
+                    "phone": "",
+                    "postcode": "",
+                    "state": "",
+                    "town": ""
+                },
+                "shipmentIndex": 0,
+                "shipTo": {
+                    "address1": "",
+                    "address2": "",
+                    "address3": "",
+                    "companyName": "",
+                    "email": "",
+                    "isoCountry": "GB",
+                    "name": "",
+                    "phone": "",
+                    "postcode": "",
+                    "state": "",
+                    "town": ""
+                }
+            }
+        ],
+        "sourceOrderId": "YourPOREF",
+        "tags": [
+        ]
+    }
+}
+
 
 ### Key Objects
 
